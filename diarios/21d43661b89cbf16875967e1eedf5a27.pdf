@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Diário da Justiça</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="images/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="initial-scale=1">
+
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Tinos'>
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/page.css">
+	<link rel="stylesheet" href="stylesheets/page-medium-screen.css" media="(min-width: 800px)">
+<!--[if lte IE 8]>
+	<script src="javascripts/html5.js"></script>
+	<script>
+		if (Object.defineProperty && Object.getOwnPropertyDescriptor &&
+	     Object.getOwnPropertyDescriptor(Element.prototype, "textContent") &&
+	    !Object.getOwnPropertyDescriptor(Element.prototype, "textContent").get)
+	  (function() {
+	    var innerText = Object.getOwnPropertyDescriptor(Element.prototype, "innerText");
+	    Object.defineProperty(Element.prototype, "textContent",
+	      { // It won't work if you just drop in innerText.get
+	        // and innerText.set or the whole descriptor.
+	        get : function() {
+	          return innerText.get.call(this)
+	        },
+	        set : function(x) {
+	          return innerText.set.call(this, x)
+	        }
+	      }
+	    );
+	  })();
+	</script>
+<![endif]-->
+</head>
+<body data-context="/diario_oficial">
+	<div class="mainheader">
+		<h1 class="logo main-headline">
+			<a href="http://www.tjro.jus.br/">
+				Tribunal de Justiça do Estado de Rondônia
+				<span class="appinfo">Diário da Justiça</span>
+			</a>
+		</h1>
+	</div>
+	<div class="gazettebar">
+    <form class="byyear" action="/diario_oficial/recupera.php" method="GET">
+			<label for="numero" class="byyear-label">Busca Rápida (Número/Ano)</label>
+			<input class="byyear-field field" type="number" name="numero" id="numero" min="1" max="999" maxlength="3" pattern="\d*"  autofocus>
+			<input class="byyear-field field" type="number" name="ano" id="ano" min="1970" max="2150" maxlength="4" >
+			<input class="byyear-button button" type="submit" value="Buscar">
+		</form>
+		<div class="last-gazette">
+			<a class="last-gazette__link" href="/diario_oficial/ultimo-diario.php">
+				<img alt="Último Diário" class="last-gazette__image" src="images/last.png">
+				Última edição
+			</a>
+		</div>
+	</div>
+	<div class="infobar">
+		<h1 class="main-headline">Informações:</h1>
+		<ul class="infobar-list">
+			<li class="infobar-item">O Diário da Justiça Eletrônico é o meio oficial de comunicação dos atos judiciais e administrativos do Tribunal de Justiça do Estado de Rondônia, conforme a <em class="infobar-item__strong">Resolução nº 07/2007</em>;</li>
+			<li class="infobar-item"><em class="infobar-item__strong">Assinado Digitalmente</em>, tem valor legal conforme a <em class="infobar-item__strong">Medida Provisória 2.200-2/2001</em> e <em class="infobar-item__strong">Lei 11.419/06</em>;</li>
+			<li class="infobar-item">O Diário da Justiça, desde o dia 22/06/2007, é assinado eletronicamente. As publicações eletrônicas do Diário da Justiça de datas anteriores são documentos de caráter infobarrmativo, sem valor legal;</li>			
+			<li class="infobar-item">Para a correta visualização dos documentos, incluindo a verificação da assinatura digital, é necessário que o <a class="infobar-item__strong-link" href="http://get.adobe.com/br/reader/">Adobe Reader 7</a>, ou superior, esteja <a class="infobar-item__strong-link" href="http://www.tjro.jus.br/certificado_digital/Adobe.pdf">instalado e configurado para validação ICP-Brasil</a>;</li>
+			<li class="infobar-item">Para a <em class="infobar-item__strong">publicação de Editais</em> será cobrado R$ 0,02643 (dois centavos de real e seisentos e quarenta e três milésimo de centavos), o caractere, incluindo-se os espaços em branco. Os downloads da Lauda Eletrônica Padronizada, Software Livre BROFFICE e Tutoriais poderão ser acessados neste <a class="infobar-item__strong-link" href="http://www.tjro.jus.br/SoftwareLivre/LaudaPadronizadaDJ.shtml">link</a>.</li>
+			<li class="infobar-item">
+			O Tribunal de Justiça de Rondônia,<em class="infobar-item__strong"> desde o dia 31/07/2023</em>, deixa de usar o Diário de Justiça Eletrônico Estadual e passa <em class="infobar-item__strong">a utilizar exclusivamente o (DJEN)</em>;</li>  
+		</ul>
+	</div>
+<!--[if lte IE 7]>
+	<script>
+		window.location.href = "http://www.tjro.jus.br/novodiario";
+	</script>
+	<script src="javascripts/ie7.js"></script>
+<![endif]-->
+	<div class="modal">
+			<div class="modal-content">
+					<span class="close-button">×</span>
+					<h4 class="multi-diario-title">Diários do dia <span id="multi-diario-date">04/07/2022</span></h4>
+					<div id="urls">
+					</div>
+			</div>
+	</div>
+	<script src="src/calendar.js"></script>
+	<script src="javascripts/page.js"></script>
+</body>
+</html>

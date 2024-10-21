@@ -1,0 +1,4 @@
+O código está bastante automatizado, onde simplesmente dando a entrada python "script.py "2024-10-04""
+ele já cria uma pasta para os diarios. 
+Infelizmente eu não consegui com que baixasse o diario, devido o link ter um codigo que é altera no final. Tentei fazer com que o meu codigo 
+lesse a página e procure um arquivo em pdf para realizar o dowload, porém ainda assim nao encontrou nenhum arquivo para realiza o download.
